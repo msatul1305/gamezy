@@ -1,0 +1,32 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 40px;
+   background: url("../images/concrete_seamless.png");
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* general */
+  
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+    
+  }
+
+  h1,h2,h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: black;
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+   
+
+  }
+  
