@@ -20,12 +20,13 @@
 </head>
 <body>
 <canvas width="400" height="400" id="game"></canvas>
+<h2 style="color:red;">&nbsp;score:</h2><h1 id="scorr" style="color:green;">0</h1>
 <script>
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
 var grid = 16;
 var count = 0;
-  
+var score=0;
 var snake = {
   x: 160,
   y: 160,
@@ -45,7 +46,6 @@ var apple = {
   y: 320
 };
 // get random whole numbers in a specific range
-// @see https://stackoverflow.com/a/1527820/2124254
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -94,10 +94,15 @@ function loop() {
     // snake ate apple
     if (cell.x === apple.x && cell.y === apple.y) {
       snake.maxCells++;
+      score++;
+      document.getElementById("scorr").innerHTML=score;
+      console.log(score);
       // canvas is 400x400 which is 25x25 grids 
       apple.x = getRandomInt(0, 25) * grid;
       apple.y = getRandomInt(0, 25) * grid;
+      
     }
+    
     // check collision with all cells after this one (modified bubble sort)
     for (var i = index + 1; i < snake.cells.length; i++) {
       
@@ -146,5 +151,6 @@ document.addEventListener('keydown', function(e) {
 // start the game
 requestAnimationFrame(loop);
 </script>
+
 </body>
 </html>
