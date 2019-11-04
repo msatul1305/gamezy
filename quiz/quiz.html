@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>'Amit's Quiz'</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="javascr.js"></script>
+    </head>
+    <body>
+     <h1>"The best HTML Quiz"</h1>
+     
+     <form id="quiz" name="quiz">
+        
+     <p>HTML stands for Hypertext _______ Language.</p>
+     <input id="textbox" type="text" name="question1">
+     
+     <p>Html element is the root element of an HTML           document.</p>
+     <input type="radio" id="mc" name="question2" value="true">true<br>
+     <input type="radio" id="mc" name="question2" value="false">false<br>
+     
+     <p>Which tag is used to define the html images?</p>
+     <input type="radio" id="mc" name="question3" value="img">img<br>
+     <input type="radio" id="mc" name="question3" value="src">src<br>
+     <input type="radio" id="mc" name="question3" value="href">href<br>
+     <input type="radio" id="mc" name="question3" value="alt">alt<br>
+
+    <p> Which of the following is an advantage of putting presentation information in a separate CSS file rather than in HTML itself?</p>
+    <input type="radio" id="mc" name="question4" value="i">    The content becomes easy to manage<br>
+    <input type="radio" id="mc" name="question4" value="m">Becomes easy to make site for different devices like mobile by making separate CSS files<br>
+    <input type="radio" id="mc" name="question4" value="g">CSS Files are generally cached and therefore decrease server load and network traffic.<br>
+    <input type="radio" id="mc" name="question4" value="im">All of the above<br>
+     
+    <p>Where in HTML document is the conventionally correct place to put reference to an external style sheet?</p>
+
+    <input type="radio" id="mc" name="question5" value="a">In the HEAD section<br>
+    <input type="radio" id="mc" name="question5" value="b">In the BODY section<br>
+    <input type="radio" id="mc" name="question5" value="c">Both of the Above<br>
+    <input type="radio" id="mc" name="question5" value="d">None of the Above<br>
+     
+     <input id="button" type="button" value="I'm finished!" onclick="check();">
+     
+     </form>
+     
+     <div id="after_submit"></div>
+     
+     <p id="messages"></p>
+     <p id="number_correct"></p>
+     <img id="pictures">
+     
+     
+     
+    </body>
+</html>
